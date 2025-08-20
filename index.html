@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maafin Aku Ya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff5f7;
+            color: #555;
+            overflow-x: hidden;
+        }
+        
+        .heart {
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+        
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .flower {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            opacity: 0.6;
+            z-index: -1;
+        }
+        
+        .handwritten {
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        .btn-forgive {
+            transition: all 0.3s;
+        }
+        
+        .btn-forgive:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(239, 68, 68, 0.3);
+        }
+        
+        .memory-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .memory-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Section 1: Opening -->
+    <section class="section text-center bg-pink-50" id="opening">
+        <div class="max-w-2xl mx-auto">
+            <div class="heart inline-block mb-6 text-red-400 text-6xl">
+                ❤️
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-pink-600 mb-6">Hallo via...</h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8">Aku mau minta maaf⬇️</p>
+            <div class="animate-bounce text-4xl">↓</div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="flower" style="top: 10%; left: 5%;">🌸</div>
+        <div class="flower" style="top: 15%; right: 10%;">🌼</div>
+        <div class="flower" style="bottom: 20%; left: 12%;">🌹</div>
+    </section>
+    
+    <!-- Section 2: Apology -->
+    <section class="section bg-white" id="apology">
+        <div class="max-w-2xl mx-auto text-center">
+            <div class="heart inline-block mb-6 text-red-400 text-6xl">
+                ❤️
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-pink-600 mb-6 handwritten">Maafkan Aku Ya...</h2>
+            <p class="text-lg md:text-xl text-gray-600 mb-4">maaf ya aku gak mau nurut tadi karena aku juga marah masa iya cewe yang hampir jadi pacar aku malah di gituin dan akhirnya gua juga yang kalah</p>
+            <p class="text-lg md:text-xl text-gray-600 mb-6">Aku benar-benar gak bermaksud buat lu marah jadi ku minta maaf ya</p>
+            <div class="heart inline-block text-red-400 text-4xl mt-4">❤️</div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="flower" style="bottom: 10%; right: 5%;">🌻</div>
+    </section>
+    
+    <!-- Section 3: Reasons -->
+    <section class="section bg-pink-50" id="reasons">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-pink-600 mb-8 handwritten">Aku Janji Akan Lebih Baik...</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-md transition-all hover:shadow-lg">
+                    <div class="text-3xl text-pink-400 mb-4">💖</div>
+                    <h3 class="font-semibold text-lg mb-2">Tidak mudah marah </h3>
+                    <p class="text-gray-600">Aku bakal lebih bisa ngontrol emosi</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md transition-all hover:shadow-lg">
+                    <div class="text-3xl text-pink-400 mb-4">👂</div>
+                    <h3 class="font-semibold text-lg mb-2">Lebih Sabar</h3>
+                    <p class="text-gray-600">Aku bakal lebih sabar</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md transition-all hover:shadow-lg">
+                    <div class="text-3xl text-pink-400 mb-4">🤗</div>
+                    <h3 class="font-semibold text-lg mb-2">Lebih Baik</h3>
+                    <p class="text-gray-600">Aku berjanji akan menjadi versi yang lebih baik</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 4: Memory -->
+    <section class="section bg-white" id="memory">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-pink-600 mb-8 text-center handwritten">Aku cuma mau minta maaf</h2>
+          
+    <!-- Section 5: Final Apology -->
+    <section class="section bg-pink-50" id="final">
+        <div class="max-w-2xl mx-auto text-center">
+            <div class="heart inline-block text-red-400 text-6xl mb-6">
+                ❤️
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-pink-600 mb-6 handwritten">Aku Benar-Benar Minta Maaf</h2>
+            <p class="text-lg md:text-xl text-gray-600 mb-8">Tolong maafin aku ya? Aku janji bakal lebih baik ke depannya.</p>
+            
+            <div class="space-y-4 max-w-xs mx-auto">
+                <button id="btnForgive" class="btn-forgive w-full py-3 px-6 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-full shadow-md transition-all">
+                    Maafin Aku
+                </button>
+                <button id="btnHug" class="btn-forgive w-full py-3 px-6 bg-white hover:bg-gray-100 text-pink-500 border border-pink-300 font-semibold rounded-full shadow-md transition-all">
+                   ...
+                </button>
+            </div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="flower" style="top: 10%; right: 5%;">🌸</div>
+        <div class="flower" style="bottom: 20%; left: 10%;">🌷</div>
+    </section>
+    
+    <script>
+        // Animate sections on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+            
+            // Create floating hearts
+            function createHeart() {
+                const heart = document.createElement('div');
+                heart.innerHTML = '❤️';
+                heart.classList.add('text-red-400', 'absolute', 'text-xl', 'opacity-70', 'animate-float');
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.top = '100vh';
+                heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+                document.body.appendChild(heart);
+                
+                setTimeout(() => {
+                    heart.remove();
+                }, 5000);
+            }
+            
+            // Button interactions
+            document.getElementById('btnForgive').addEventListener('click', function() {
+                alert('Makasih udah maafin');
+                createHearts();
+            });
+            
+            document.getElementById('btnHug').addEventListener('click', function() {
+                alert('makasih udah maafin');
+                createHearts();
+            });
+            
+            function createHearts() {
+                for (let i = 0; i < 20; i++) {
+                    setTimeout(createHeart, i * 100);
+                }
+            }
+            
+            // Add floating animation style
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes float {
+                    0% {
+                        transform: translateY(0) rotate(0deg);
+                        opacity: 0.7;
+                    }
+                    100% {
+                        transform: translateY(-100vh) rotate(360deg);
+                        opacity: 0;
+                    }
+                }
+                .animate-float {
+                    animation: float linear forwards;
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
+
