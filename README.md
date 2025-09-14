@@ -1,2 +1,2 @@
 # maafkan-aku
-maafkan aku via
+maafkan aku qotrun atau nada
